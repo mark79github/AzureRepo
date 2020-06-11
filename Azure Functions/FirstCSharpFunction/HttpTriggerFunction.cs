@@ -38,7 +38,7 @@ namespace Company.Function
 
             return inputValue > 0
                 ? (ActionResult)new OkObjectResult($@"{{'result':'{result}'}}")
-                : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
+                : new BadRequestObjectResult("Please pass in a rating on the query string or in the request body");
 
 //ORIGINAL - START
             // string name = req.Query["name"];
